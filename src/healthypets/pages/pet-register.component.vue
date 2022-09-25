@@ -6,27 +6,27 @@
   </div>
   <div>
     <pv-card>
-      <template #content>
+      <template class>
         <img src="Veterinaria1.png" width="355px" height="355px" border-radius="50%" alt="logoVetLima">
       </template>
     </pv-card>
     <pv-card>
-      <template #title>
+      <template class="mt-4 align-content-center">
         {{ ('veterinaries.name') }}
       </template>
-      <template #content>
+      <template class="mt-4 align-content-center">
         {{ ('veterinaries.content') }}
       </template>
-      <template #title>
+      <template class="mt-4 align-content-center">
         Comentarios destacados:
       </template>
-      <template #content>
+      <template class="mt-4 align-content-evenly">
         <ul>
           <li>{{ ('commentaries.comment') }}</li>
         </ul>
       </template>
-      <template #footer>
-        <p-button label="Registra mascota aquí" icon="pi pi-check"/>
+      <template class="mt-4 align-content->
+        <pv-button label="Registra mascota aquí" icon="pi pi-check"/>
       </template>
     </pv-card>
   </div>
@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: "vetinfo"
+  name: "pet-register.component.vue"
 }
 </script>
     
