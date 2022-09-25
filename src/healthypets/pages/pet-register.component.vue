@@ -1,31 +1,31 @@
 <template>
   <div>
-    <pv-sidebar v-model:visible="visibleLeft">
+    <pv-sidebar v-model:visible="visibleLeft" class="p-sidebar-content">
       <h2>Healthy Pets</h2>
     </pv-sidebar>
   </div>
   <div>
-    <pv-card>
-      <template class>
+    <pv-card class="mt-2">
+      <template class="mt-2 align-content-center">
         <img src="Veterinaria1.png" width="355px" height="355px" border-radius="50%" alt="logoVetLima">
       </template>
     </pv-card>
-    <pv-card>
-      <template class="mt-4 align-content-center">
-        {{ ('veterinaries.name') }}
+    <pv-card class="mt-2">
+      <template #title class="mt-4 align-content-start p-card-title">
+        <h3>{{ ('veterinaries.name') }}</h3>
       </template>
-      <template class="mt-4 align-content-center">
-        {{ ('veterinaries.content') }}
+      <template #content class="mt-4 align-content-center p-card-content">
+        <p>{{ ('veterinaries.content') }}</p>
       </template>
-      <template class="mt-4 align-content-center">
-        Comentarios destacados:
+      <template #title class="mt-4 align-content-center p-card-title">
+        <h3>Comentarios destacados:</h3>
       </template>
-      <template class="mt-4 align-content-evenly">
+      <template #commentlist class="mt-4 align-content-evenly p-card-content">
         <ul>
           <li>{{ ('commentaries.comment') }}</li>
         </ul>
       </template>
-      <template class="mt-4 align-content->
+      <template #regbutton class="mt-4 align-content-center p-card-footer">
         <pv-button label="Registra mascota aquí" icon="pi pi-check"/>
       </template>
     </pv-card>
@@ -34,7 +34,8 @@
 
 <script>
 export default {
-  name: "pet-register.component.vue"
+  name: "pet-register.component.vue",
+  components: {PvCard, PvButton,PvSidebar}
 }
 </script>
     
