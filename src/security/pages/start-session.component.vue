@@ -36,6 +36,7 @@
 export default {
   name: "start-session.component",
   data() {
+
     return {
       email1: 'xxx',
       password1:'123',
