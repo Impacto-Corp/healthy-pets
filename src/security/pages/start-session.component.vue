@@ -21,6 +21,7 @@
       </span>
       <div class="b-start m-6" >
           <pv-button label="Log in"
+
                    class="p-button-rounded "
                    @click="validation"
         />
