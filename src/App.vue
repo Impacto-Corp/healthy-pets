@@ -1,13 +1,16 @@
 <template>
 
-
+  <veterinary-register></veterinary-register>
 </template>
 
 
 <script>
 
-import UserRegister from "./security/pages/user-register.component.vue";
-import StartSession from "./security/pages/start-session.component.vue";
+
+import RegisterPet from "./healthypets/pages/pet-register2.component.vue"
+import VeterinaryRegister from "./healthypets/pages/veterinary-register.component.vue"
+
+
 
 
 export default {
@@ -20,8 +23,8 @@ export default {
   },
 
   components: {
-    StartSession,
-    UserRegister,
+    VeterinaryRegister,
+
 
   }
 }

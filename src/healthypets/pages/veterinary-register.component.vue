@@ -2,7 +2,7 @@
   <div class="registervet">
 
     <div class="logo1">
-      <img src="src/assets/fotovet1.png">
+      <img src="src/assets/photovet1.png">
     </div>
 
     <div class="data">
@@ -24,14 +24,14 @@
       </span>
 
       <div class="v-register">
-        <pv-button label=" Check in " style="background-color: #ffa448; padding: 0px 150px; "
+        <pv-button label=" Check in " style="background-color: #ffa448; padding: 0 150px; "
                    @click="registerVet"
         />
       </div>
     </div>
 
     <div class="logo2">
-      <img src="src/assets/fotovet2.png">
+      <img src="src/assets/fhotovet2.png">
     </div>
   </div>
 </template>
@@ -86,30 +86,27 @@ export default {
 
 <style >
 
-.registervet{
-  background: url("./src/assets/FondoN.jpg");
+.registervet {
+  background: url("./src/assets/photovet.png");
   background-size: cover;
-  width: 1810px;
-  height:935px;
+  width: 1900px;
+  height: 900px;
   display: flex;
-  border:0;
 
 }
 
 .data{
-  border: 2px solid var(--orange);
+
   height:250px;
   position: relative;
   left:0;
   top:300px;
   background-color: rgba(227,146,32,0.5);
   width: 20%;
-
-
 }
 
 .v-register{
-  margin: 50px 5px;
+  margin: 50px 10px;
   color: #ffa448;
 
 }
@@ -118,9 +115,9 @@ export default {
   display: flex;
   position: relative;
   top:250px;
-  left: 50px;
-  height: 400px;
-  width: 50%;
+  left: 200px;
+  height: 390px;
+  width: 40%;
 }
 
 .v-register{
@@ -135,8 +132,8 @@ export default {
   position: relative;
   left: 120px;
   top: 250px;
-  height: 400px;
-  width: 50%;
+  height: 390px;
+  width: 40%;
 }
 
 
