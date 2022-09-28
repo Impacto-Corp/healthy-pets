@@ -33,6 +33,7 @@
 </template>
 
 <script>
+
 export default {
   name: "start-session.component",
   data() {
