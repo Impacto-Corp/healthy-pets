@@ -7,6 +7,7 @@
     <div class="details">
       <pv-card style="margin-top:10px">
         <template #content>
+
           {{naming}}
         </template>
       </pv-card>

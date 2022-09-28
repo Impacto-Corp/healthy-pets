@@ -8,6 +8,7 @@
             <div class="icon">
               <img alt="user header" :src="petData.image" />
             </div>
+
           </div>
         </div>
       </template>

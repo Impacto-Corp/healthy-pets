@@ -9,6 +9,7 @@
       <template class="mt-2 align-content-center">
         <img src="Veterinaria1.png" width="355px" height="355px" border-radius="50%" alt="logoVetLima">
       </template>
+
     </pv-card>
     <pv-card class="mt-2">
       <template #title class="mt-4 align-content-start p-card-title">
