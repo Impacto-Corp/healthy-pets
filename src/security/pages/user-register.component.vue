@@ -117,7 +117,7 @@ export default {
 .register {
   width: 100%;
   height: 770px;
-  background: url("./src/assets/Fondo1.png");
+  background: url("../../assets/Fondo1.png");
 
   display: flex;
   justify-content: center;

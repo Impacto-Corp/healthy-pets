@@ -1,8 +1,8 @@
 
 import { createRouter, createWebHistory } from 'vue-router';
 
-const UserRegisterComponent = () => import('../healthypets/pages/user-register.component.vue');
-const StartSessionComponent = () => import('../healthypets/pages/start-session.component.vue');
+const UserRegisterComponent = () => import('../security/pages/user-register.component.vue');
+const StartSessionComponent = () => import('../security/pages/start-session.component.vue');
 const PetRegisterComponent = () => import('../healthypets/pages/pet-register.component.vue');
 const PetProfileComponent = () => import('../healthypets/pages/pet-profile.component.vue');
 
