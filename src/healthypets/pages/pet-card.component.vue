@@ -131,7 +131,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 p{
   color: #181818;
   font-size: 18px;
