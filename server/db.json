@@ -6,6 +6,32 @@
       "email": "juanperez@gmail.com",
       "password": "juanperez123"
     }
+  ],
+  "veterinaries": [
+    {
+      "id": 1,
+      "name": "Veterinaria Lima",
+      "description": "Fundada en 2008, se especializa principalmente en atender emergencias veterinarias y también ofrece servicios cosméticos"
+    }
+  ],
+  "commentaries": [
+    {
+      "id": 1,
+      "author": "Lucas Sanchez",
+      "comment": "De los mejores servicios que he recibido"
+    },
+    {
+      "id": 2,
+      "author": "Facundo Costa",
+      "comment": "De los mejores servicios que he recibido"
+    },
+    {
+      "id": 3,
+      "author": "Maria Banderas",
+      "comment": "De los mejores servicios que he recibido"
+    }
   ]
+
+  ""
 
 }
