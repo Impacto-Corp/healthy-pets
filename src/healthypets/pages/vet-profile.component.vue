@@ -20,6 +20,7 @@
           {{vets.addressing}}
         </template>
       </pv-card>
+
       <pv-card style="margin-top:10px" v-for="(vets) in vets">
         <template #content>
           {{vets.phone}}
@@ -45,7 +46,7 @@
 import axios from "axios";
 const baseUrl="http://localhost:3000/pets/";
 export default {
-  data() {
+  <!--data() {
     return {
       vets: [
         {
@@ -59,10 +60,40 @@ export default {
         }
       ],
     };
-  },
+  }-->
   return: {
     name: "vet-profile"
-  }
+  },
+  data() {
+    return {
+      vets: [],
+      toast: false,
+    };
+  },
+  methods:{
+    async GetVet(){
+      await axios
+          .get(baseUrl)
+          .then((resp)=>{
+            this.vets =resp.data;
+          })
+          .catch((err)=>{
+            console.log(err);
+          });
+    },
+    async PutNameVet(id,name){
+      await axios
+          .put(baseUrl+id,{name:name})
+          .then((resp)=>{
+            console.log(resp);
+            this.nameis='';
+            this.GetVet();
+          })
+          .catch((err)=>{
+            console.log(err);
+          })
+    },
+  },
 }
 </script>
 
