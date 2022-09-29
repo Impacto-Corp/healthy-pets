@@ -44,7 +44,7 @@ export default {
   data(){
     return{
 
-      selectedType: null,
+
       ruc:'',
       streetaddress: '',
       phonenumber:'',
@@ -65,7 +65,6 @@ export default {
         ruc:this.ruc,
         streetaddres:this.streetaddress,
         phonenumber:this.phonenumber,
-        selectedType:this.selectedType,
       }),
 
       console.log(this.VetList)
@@ -73,7 +72,6 @@ export default {
       this.ruc='';
       this.streetaddress='';
       this.phonenumber='';
-      this.selectedType=null;
     }
   }
 

@@ -30,8 +30,15 @@
       "author": "Maria Banderas",
       "comment": "De los mejores servicios que he recibido"
     }
-  ]
+  ],
 
-  ""
+  "pets":[
+    {
+      "id": 1,
+      "race": "dog",
+      "name": "firulais",
+      "age": "2"
+    }
+  ]
 
 }
