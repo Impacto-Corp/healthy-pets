@@ -5,34 +5,34 @@
       <img src="src/assets/Veterinaria1.png">
     </div>
     <div class="details">
-      <pv-card style="margin-top:10px">
+      <pv-card style="margin-top:10px" v-for="(vets) in vets">
         <template #content>
-          {{naming}}
+          {{vets.naming}}
         </template>
       </pv-card>
-      <pv-card style="margin-top:10px">
+      <pv-card style="margin-top:10px" v-for="(vets) in vets">
         <template #content>
-          {{lead_medic}}
+          {{vets.lead_medic}}
         </template>
       </pv-card>
-      <pv-card style="margin-top:10px">
+      <pv-card style="margin-top:10px" v-for="(vets) in vets">
         <template #content>
-          {{addressing}}
+          {{vets.addressing}}
         </template>
       </pv-card>
-      <pv-card style="margin-top:10px">
+      <pv-card style="margin-top:10px" v-for="(vets) in vets">
         <template #content>
-          {{phone}}
+          {{vets.phone}}
         </template>
       </pv-card>
-      <pv-card style="margin-top:10px">
+      <pv-card style="margin-top:10px" v-for="(vets) in vets">
         <template #content>
-          {{mail}}
+          {{vets.mail}}
         </template>
       </pv-card>
-      <pv-card style="margin-top:10px">
+      <pv-card style="margin-top:10px" v-for="(vets) in vets">
         <template #content>
-          {{descrip}}
+          {{vets.descript}}
         </template>
       </pv-card>
       <pv-button label="Registra a tu mascota aquí" class="p-button-rounded p-button-secondary"
@@ -42,18 +42,23 @@
 </template>
 
 <script>
+import axios from "axios";
+const baseUrl="http://localhost:3000/pets/";
 export default {
   data() {
     return {
-      "naming": "Veterinaria Lima",
-      "lead_medic": "Dr. Augusto Solano",
-      "addressing": "Jr. Velasquez 654, San Isidro, Lima",
-      "phone": "01 7543659",
-      "mail": "AugSol87@gmail.com",
-      "descrip": "Fundada en 1996, se especializa principalmente en atender " +
-                  "emergencias veterinarias y también ofrece servicios cosméticos",
-
-    }
+      vets: [
+        {
+          "naming": "Veterinaria Lima",
+          "lead_medic": "Dr. Augusto Solano",
+          "addressing": "Jr. Velasquez 654, San Isidro, Lima",
+          "phone": "01 7543659",
+          "mail": "AugSol87@gmail.com",
+          "descript": "Fundada en 1996, se especializa principalmente en atender " +
+              "emergencias veterinarias y también ofrece servicios cosméticos",
+        }
+      ],
+    };
   },
   return: {
     name: "vet-profile"

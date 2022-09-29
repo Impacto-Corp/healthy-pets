@@ -7,11 +7,15 @@
       "password": "juanperez123"
     }
   ],
-  "veterinaries": [
+  "vets": [
     {
       "id": 1,
-      "name": "Veterinaria Lima",
-      "description": "Fundada en 2008, se especializa principalmente en atender emergencias veterinarias y también ofrece servicios cosméticos"
+      "naming": "Veterinaria Lima",
+      "lead_medic": "Dr. Augusto Solano",
+      "addressing": "Jr. Velasquez 654, San Isidro, Lima",
+      "phone": "01 7543659",
+      "mail": "AugSol87@gmail.com",
+      "descript": "Fundada en 2008, se especializa principalmente en atender emergencias veterinarias y también ofrece servicios cosméticos"
     }
   ],
   "commentaries": [
@@ -31,7 +35,4 @@
       "comment": "De los mejores servicios que he recibido"
     }
   ]
-
-  ""
-
 }
